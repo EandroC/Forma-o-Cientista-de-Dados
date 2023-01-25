@@ -1,6 +1,6 @@
 ---
 Formação Cientista de Dados - Prof. Fernando Amaral
-SEÇÃO 5: Faça você mesmo
+SEÇÃO 5: Pratica em R - Introdução ao R
 ---
 
 1.Crie duas variáveis Ana e Paulo e atribua a elas valores de suas idades, sendo respectivamente 8 e 12 anos. As variáveis devem ser do tipo inteiro. Imprima no console "A menina é mais velha" ou "O menino é mais velho" como resultado de um teste lógico.
@@ -51,10 +51,7 @@ for (i in 1:10) {
  tail(x= women, n = 10)
 ```
 
-5. Use a função plot do R para produzir um gráfico do
-atributos Sepal.Width e Petal.Length do conjunto de
-dados Iris. O gráfico deve imprimir apenas das linhas
-50 até 100. 
+5. Use a função plot do R para produzir um gráfico do atributos Sepal.Width e Petal.Length do conjunto de dados Iris. O gráfico deve imprimir apenas das linhas 50 até 100. 
 
 ```{r}
 #Questão 5
@@ -63,9 +60,7 @@ plot(novairis)
 
 ```
 
-6. Crie dois vetores de tamanhos iguais, some as
-posições equivalentes dos vetores e imprima o
-resultado.
+6. Crie dois vetores de tamanhos iguais, some as posições equivalentes dos vetores e imprima o resultado.
 
 ```{r}
 #Questão 6
@@ -89,9 +84,7 @@ print(vetor1 + vetor2)
 
 ```
 
-7. Imprima o número de linhas, de colunas, nomes das
-linhas e nome das colunas do conjunto de dados
-CO2.
+7. Imprima o número de linhas, de colunas, nomes das linhas e nome das colunas do conjunto de dados CO2.
 
 ```{r}
 #Questão 7

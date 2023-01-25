@@ -1,9 +1,9 @@
 ---
 Formação Cientista de Dados - Prof. Fernando Amaral
-SEÇÃO 9: Limpeza e Tratamento de Dados
+SEÇÃO 9: Pratica em R - Limpeza e Tratamento de Dados
 ---
 
-Tratar dados 'tempo.csv'
+Tratar dados 'DadosS09-10.csv'
    Aparência: sol, nublado, chuva
    Temperatura: -130 ~ 130 F
    Umidade: 0 ~ 100
@@ -14,7 +14,7 @@ Tratar dados 'tempo.csv'
 
 
 ```{r}
-dados = read.csv("tempo.csv", sep = ";", na.strings="", stringsAsFactors=T)
+dados = read.csv("../Dados/DadosS09-10.csv", sep = ";", na.strings="", stringsAsFactors=T)
 ```
 
 1. Explorando os dados

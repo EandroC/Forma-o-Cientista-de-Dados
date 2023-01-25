@@ -1,0 +1,47 @@
+---
+Formação Cientista de Dados - Prof. Fernando Amaral
+SEÇÃO 12: Pratica em R - Gráficos, Visualização e Dashboards
+---
+
+1. Arquivo DadosS09-10.csv
+  1. CODIGO
+  2. MUNICIPIO
+  3. PIB
+  4. VALOREMPENHO
+
+```{r}
+#install.packages("RColorBrewer")
+library("RColorBrewer")
+```
+
+```{r}
+dados = read.csv('../Dados/DadosS12-13.csv', sep=";")
+head(dados)
+```
+
+
+2. Empenho em diárias em municípios gaúchos e PIB do municipio. 
+
+```{r}
+boxplot(dados$VALOREMPENHO, main="Empenho em Diárias", col = brewer.pal(n = 11, name = "Paired"), outline = F )
+
+```
+```{r}
+hist(dados$PIB,main="PIB dos Municípios", col = brewer.pal(n = 3, name = "Pastel1"))
+```
+```{r}
+Mempenho = head(dados[order(-dados$VALOREMPENHO),],10)
+barplot(Mempenho$VALOREMPENHO, col=brewer.pal(n = 10, name = "RdBu"),las=2,main = "Maiores Empenhos")
+legend("topright",legend=Mempenho$MUNICIPIO,col = brewer.pal(n = 10, name = "RdBu"), lty=1:2, cex=0.8, ncol = 2,lwd=4)
+box()
+```
+
+3. Execute um processo de Análise de Dados Exploratória para conhecimento/Entendimento destes dados.
+
+```{r}
+Mpibs =   head(dados[order(-dados$PIB),],10)
+barplot(Mpibs$PIB,col=brewer.pal(n = 10, name = "Spectral"),las=2,main = "Maiores PIBS")
+legend("topright",legend=Mempenho$MUNICIPIO,col = brewer.pal(n = 10, name = "Spectral"), lty=1:2, cex=0.8, ncol = 2,lwd=4)
+box()
+```
+
